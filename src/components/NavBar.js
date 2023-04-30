@@ -119,7 +119,7 @@ const NavBar = () => {
             <TwitterIcon />
           </motion.a>
           <motion.a
-            href="https://twitter.com"
+            href="https://github.com/tch180"
             target={"_blank"}
             className="w-6 mx-3"
             whileHover={{ y: -2 }}
@@ -128,7 +128,7 @@ const NavBar = () => {
             <GithubIcon />
           </motion.a>
           <motion.a
-            href="https://twitter.com"
+            href="https://www.linkedin.com/in/toryredner/"
             target={"_blank"}
             className="w-6 mx-3"
             whileHover={{ y: -2 }}
@@ -190,7 +190,7 @@ const NavBar = () => {
           </nav>
 
           <nav className="flex items-center justify-center flex-wrap mt-2">
-            <motion.a
+            {/* <motion.a
               href="https://twitter.com"
               target={"_blank"}
               whileHover={{ y: -2 }}
@@ -198,9 +198,9 @@ const NavBar = () => {
               className="w-6 mr-3 sm:mx-1"
             >
               <TwitterIcon />
-            </motion.a>
+            </motion.a> */}
             <motion.a
-              href="https://twitter.com"
+              href="https://github.com/tch180"
               target={"_blank"}
               className="w-6 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1"
               whileHover={{ y: -2 }}
@@ -209,7 +209,7 @@ const NavBar = () => {
               <GithubIcon />
             </motion.a>
             <motion.a
-              href="https://twitter.com"
+              href="https://www.linkedin.com/in/toryredner/"
               target={"_blank"}
               className="w-6 mx-3 sm:mx-1"
               whileHover={{ y: -2 }}
