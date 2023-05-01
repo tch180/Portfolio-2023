@@ -9,6 +9,7 @@ import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import TransitionEffect from "@/components/TransitionEffect";
+import selife from '../../public/images/profile/me1AI.jpg'
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -83,7 +84,7 @@ const about = () => {
             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-light bg-dark p-8 dark:bg-black dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-light dark:bg-dark  " />
               <Image
-                src={iceman}
+                src={selife}
                 alt="Picture of Tory "
                 className="w-full h-auto rounded-2xl"
                 priority

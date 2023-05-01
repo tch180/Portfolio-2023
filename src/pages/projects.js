@@ -142,8 +142,8 @@ const projects = () => {
                 type="Project"
                 title="Eagle Dashboard"
                 img={dashboard1}
-                link="/"
-                github="/"
+                link="!#"
+                github="https://github.com/tch180/EagleGroup"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -164,7 +164,7 @@ const projects = () => {
                 summary="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
                 img={fosterConnect}
                 link="/"
-                github="/"
+                github="https://github.com/tch180/fosterConnect"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
