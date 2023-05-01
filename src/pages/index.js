@@ -42,8 +42,8 @@ export default function Home() {
                 ' />
 
               <p className="my-4 text-base font-medium dark:text-dark md:text-sm sm:text-xs">
-                Maximize your web app's potential with a skilled MERN developer.
-                Hire one now and watch your vision come to life.
+                Maximize your web app's potential with a skilled developer.
+               and watch your vision come to life.
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center" >
                 <Link
