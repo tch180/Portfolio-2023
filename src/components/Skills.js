@@ -31,7 +31,7 @@ const Skill = ({name,exp,skills, icon}) => {
 const Skills = () => {
   return (
     <>
-    <h2 className='font-bold text-8xl mt-64 w-full text-center xs:mt-14'>Skills</h2>
+    <h2 className='font-bold text-8xl mt-64 w-full text-center md:text-6xl md:mt-32'>Skills</h2>
     <div className='flex  justify-between flex-wrap  mt-6 lg:my-4 md:my-6'>
     <Skill icon={<Mongo className={`animate-bounce mt-4`}  />}   name='MongoDB'exp={"4 years"} skills={"Modeling Schema Documents Sub-Documents"} />
     <Skill icon={<ExpressIcon className={`animate-ping-slow`}  />}   name='Express'exp={"4 years"} skills={"Routing Middleware CRUD Authenication/Authorization JSON"} />

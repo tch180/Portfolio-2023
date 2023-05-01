@@ -8,21 +8,22 @@ import { useMotionValue, useSpring, useInView } from "framer-motion";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
 
-  const montionValue = useMotionValue(0);
+  const motionValue  = useMotionValue(0);
 
-  const springValue = useSpring(montionValue, { duration: 3000 });
+  const springValue = useSpring(motionValue , { duration: 3000 });
 
   const isInView = useInView(ref, { once: true });
 
   useEffect(() => {
     if (isInView) {
-      montionValue.set(value);
+      motionValue .set(value);
     }
-  }, [isInView, value, montionValue]);
+  }, [isInView, value, motionValue ]);
 
   useEffect(() => {
     springValue.on("change", (latest) => {
@@ -32,7 +33,7 @@ const AnimatedNumbers = ({ value }) => {
     });
   }, [springValue, value]);
 
-  return <span className="inline-block text-8xl font-bold lg:text-md xs:text-base xs:items-center	" ref={ref}></span>;
+  return <span className="" ref={ref}></span>;
 };
 
 const about = () => {
@@ -42,6 +43,7 @@ const about = () => {
         <title>TR | About</title>
         <meta name="description" content="About page" />
       </Head>
+      <TransitionEffect/>
       <main className="flex w-full flex-col items-center justify-center dark:text-dark">
         <Layout className="pt-16">
           <AnimatedText
@@ -53,7 +55,7 @@ const about = () => {
               <h2 className="mb-4 text-4xl font-bold uppercase text-light/50 dark:text-dark/50">
                 Bio
               </h2>
-              <p className="font-medium text-3xl xs:text-lg">
+              <p className="font-medium ">
                 Hi there!
                 <br/> My name is Tory Redner, and I'm a highly motivated and
                 solutions-oriented software engineer with a passion for creating
@@ -64,13 +66,13 @@ const about = () => {
                 support, and small network management/cloud setup.
               </p>
 
-              <p className="my-4 font-medium text-3xl  xs:text-lg">
+              <p className="my-4 font-medium ">
                 I believe that design is about more than just making things look
                 pretty – it's about solving problems and creating intuitive,
                 enjoyable experiences for users.
               </p>
 
-              <p className="font-medium text-3xl  xs:text-lg">
+              <p className="font-medium ">
                 Whether I'm working on a website, mobile app, or other digital
                 product, I bring my commitment to design excellence and
                 user-centered thinking to every project I work on. I look
@@ -93,7 +95,7 @@ const about = () => {
             </div>
             <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3 xl:!text-sm" >
               <div className="flex flex-col items-end justify-center xl:items-center mx-2 xs:items-center">
-                <span className="inline-block text-7xl font-bold md:text-2xl sm:text-2xl xs:text-sm">
+                <span className="inline-block text-7xl font-bold md:text-2xl sm:text-2xl xs:text-4xl">
                   <AnimatedNumbers value={50} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-light/75 dark:text-darkSecondary/75 xl:text-center md:text-lg sm:text-base
@@ -103,7 +105,7 @@ const about = () => {
               </div>
 
               <div className="flex flex-col items-end justify-center xl:items-center mx-2 xs:items-center">
-                <span className="inline-block text-7xl font-bold md:text-2xl sm:text-2xl xs:text-sm" >
+                <span className="inline-block text-7xl font-bold md:text-2xl sm:text-2xl xs:text-4xl" >
                   <AnimatedNumbers value={50} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-light/75 dark:text-darkSecondary/75 xl:text-center md:text-lg sm:text-base
@@ -113,7 +115,7 @@ const about = () => {
               </div>
 
               <div className="flex flex-col items-end justify-center xl:items-center mx-2 xs:items-center">
-                <span className="inline-block text-7xl font-bold md:text-2xl sm:text-2xl xs:text-sm">
+                <span className="inline-block text-7xl font-bold md:text-2xl sm:text-2xl xs:text-4xl">
                   <AnimatedNumbers value={4} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-light/75 dark:text-darkSecondary/75 xl:text-center md:text-lg sm:text-base

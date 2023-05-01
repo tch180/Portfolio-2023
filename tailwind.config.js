@@ -29,6 +29,8 @@ module.exports = {
         primaryDark: "#58E6D9", // 80,230,217
         reactBlue: "#61dafb", // 97,218,251
         nodeGreen: "#3c873a", // 60,135,58
+        t1: "#9EC5AB" , // 158,197,171
+        t2: "#5A2328" , // 90,35,40
     }, 
     keyframes: {
       wave: {

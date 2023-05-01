@@ -8,6 +8,7 @@ import Link from "next/link";
 import { LinkArrow } from "../../src/components/Icons";
 import HireMe from "@/components/HireMe";
 import lightbulb from "../../public/lightbulb.svg";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function Home() {
      
 
       </Head>
+      <TransitionEffect/>
       <main className="flex items-center text-light w-full min-h-screen dark:text-dark " >
         <Layout className="pt-0 md:pt-16 sm:pt-8">
           <div className="flex items-center justify-between w-full lg:flex-col">

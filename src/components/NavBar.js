@@ -202,7 +202,7 @@ const NavBar = () => {
             <motion.a
               href="https://github.com/tch180"
               target={"_blank"}
-              className="w-6 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1"
+              className="w-6 mx-3 bg-light rounded-full dark:bg-light sm:mx-1"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
             >
