@@ -131,7 +131,7 @@ const projects = () => {
               <FeaturedProject
                 type="Featured Project"
                 title="oneStory"
-                summary="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+                summary="The bookworm's TikTok. A social media platform for book lovers. Have Discussions, share your favorite books, and connect with other book lovers. WIP."
                 img={oneStory}
                 link="/"
                 github="/"
@@ -161,7 +161,7 @@ const projects = () => {
               <FeaturedProject
                 type="Featured Project"
                 title="Foster Connect"
-                summary="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+                summary="Connecting Former Foster Youth with Mentors, Resources, and Community. Currently on hold."
                 img={fosterConnect}
                 link="/"
                 github="https://github.com/tch180/fosterConnect"
