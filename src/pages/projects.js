@@ -131,9 +131,12 @@ const projects = () => {
               <FeaturedProject
                 type="Featured Project"
                 title="oneStory"
-                summary="The bookworm's TikTok. A social media platform for book lovers. Have Discussions, share your favorite books, and connect with other book lovers. WIP."
+                summary=" Immerse yourself in a universe of captivating tales, where every
+                book becomes an adventure waiting to unfold. OneStory brings
+                together the magic of reading and the power of community,
+                connecting book lovers like never before "
                 img={oneStory}
-                link="/"
+                link="www.onestory.one"
                 github="/"
               />
             </div>

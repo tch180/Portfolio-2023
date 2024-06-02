@@ -7,7 +7,7 @@ import Image from "next/image";
 import techArticle from "../../public/images/profile/techArticle.jpg";
 import { motion, useMotionValue } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
-
+import article1 from "../../public/images/profile/article1.png"
 
 const FramerImage = motion(Image);
 
@@ -121,12 +121,11 @@ const articles = () => {
           " />
           <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16">
             <FeaturedArticle
-              img={techArticle}
-              title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-              time="7 min read"
-              summary="Excepteur id et do labore ad ullamco id do ipsum nostrud aliqua dolor et. Exercitation tempor pariatur laboris nisi deserunt id ut sunt enim commodo enim. Nostrud esse commodo adipisicing in do voluptate deserunt reprehenderit mollit ea consequat ut ea laborum. Dolor Lorem laboris adipisicing dolor laborum mollit est ad anim aliqua pariatur.
-            "
-              link="/"
+              img={article1}
+              title="Transforming Your Windows Terminal into a Mac-Like Experience"
+              time="4 min read"
+              summary="If you’re a Windows user who admires the sleek and efficient Mac terminal, you don’t have to envy it any longer. With a few simple steps, you can turn your Windows terminal into a Mac-like experience by installing Clink and Oh My Posh. Additionally, we’ll also guide you through the process of installing Git, which will empower you to use powerful Linux commands"
+              link="https://medium.com/@thopstadredner/transforming-your-windows-terminal-into-a-mac-like-experience-1ec95d206114"
             />
 
             <FeaturedArticle
