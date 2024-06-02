@@ -5,7 +5,7 @@ import Layout from "@/components/Layout";
 import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
-import oneStory from "../../public/images/profile/oneStory.png";
+import oneStory from "../../public/images/profile/onestory2.png";
 import { motion } from "framer-motion";
 import fosterConnect from "../../public/images/profile/fosterConnect.png";
 import optum3 from "../../public/images/profile/optum3.png";
@@ -136,7 +136,7 @@ const projects = () => {
                 together the magic of reading and the power of community,
                 connecting book lovers like never before "
                 img={oneStory}
-                link="www.onestory.one"
+                link="https://www.onestory.one"
                 github="/"
               />
             </div>
