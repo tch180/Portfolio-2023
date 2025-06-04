@@ -1,33 +1,33 @@
-import React, { useEffect, useRef } from "react";
-import Head from "next/head";
-import AnimatedText from "@/components/AnimatedText";
-import Layout from "@/components/Layout";
-import Image from "next/image";
-import iceman from "../../public/images/profile/iceman.png";
-import { useMotionValue, useSpring, useInView } from "framer-motion";
-import Skills from "@/components/Skills";
-import Experience from "@/components/Experience";
-import Education from "@/components/Education";
-import TransitionEffect from "@/components/TransitionEffect";
-import selife from '../../public/images/profile/me1AI.jpg'
+import React, { useEffect, useRef } from 'react';
+import Head from 'next/head';
+import AnimatedText from '@/components/AnimatedText';
+import Layout from '@/components/Layout';
+import Image from 'next/image';
+import iceman from '../../public/images/profile/iceman.png';
+import { useMotionValue, useSpring, useInView } from 'framer-motion';
+import Skills from '@/components/Skills';
+import Experience from '@/components/Experience';
+import Education from '@/components/Education';
+import TransitionEffect from '@/components/TransitionEffect';
+import selife from '../../public/images/profile/me1AI.jpg';
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
 
-  const motionValue  = useMotionValue(0);
+  const motionValue = useMotionValue(0);
 
-  const springValue = useSpring(motionValue , { duration: 3000 });
+  const springValue = useSpring(motionValue, { duration: 3000 });
 
   const isInView = useInView(ref, { once: true });
 
   useEffect(() => {
     if (isInView) {
-      motionValue .set(value);
+      motionValue.set(value);
     }
-  }, [isInView, value, motionValue ]);
+  }, [isInView, value, motionValue]);
 
   useEffect(() => {
-    springValue.on("change", (latest) => {
+    springValue.on('change', (latest) => {
       if (ref.current && latest.toFixed(0) <= value) {
         ref.current.textContent = latest.toFixed(0);
       }
@@ -44,7 +44,7 @@ const about = () => {
         <title>TR | About</title>
         <meta name="description" content="About page" />
       </Head>
-      <TransitionEffect/>
+      <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center dark:text-dark">
         <Layout className="pt-16">
           <AnimatedText
@@ -58,7 +58,7 @@ const about = () => {
               </h2>
               <p className="font-medium ">
                 Hi there!
-                <br/> My name is Tory Redner, and I'm a highly motivated and
+                <br /> My name is Tory Redner, and I'm a highly motivated and
                 solutions-oriented software engineer with a passion for creating
                 cutting-edge web applications. With experience in both front-end
                 and back-end development, I excel in Full Stack Web Development
@@ -91,41 +91,44 @@ const about = () => {
                 sizes="(max-width: 768px) 100vw,
                 (max-width: 1200px) 50vw,
                 33vw"
-                
               />
             </div>
-            <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3 xl:!text-sm" >
+            <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3 xl:!text-sm">
               <div className="flex flex-col items-end justify-center xl:items-center mx-2 xs:items-center">
                 <span className="inline-block text-7xl font-bold md:text-2xl sm:text-2xl xs:text-4xl">
                   <AnimatedNumbers value={50} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-light/75 dark:text-darkSecondary/75 xl:text-center md:text-lg sm:text-base
-                xs:text-sm">
+                <h2
+                  className="text-xl font-medium capitalize text-light/75 dark:text-darkSecondary/75 xl:text-center md:text-lg sm:text-base
+                xs:text-sm"
+                >
                   Satisfied Clients
                 </h2>
               </div>
 
               <div className="flex flex-col items-end justify-center xl:items-center mx-2 xs:items-center">
-                <span className="inline-block text-7xl font-bold md:text-2xl sm:text-2xl xs:text-4xl" >
-                  <AnimatedNumbers value={100} />+
+                <span className="inline-block text-7xl font-bold md:text-2xl sm:text-2xl xs:text-4xl">
+                  <AnimatedNumbers value={500} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-light/75 dark:text-darkSecondary/75 xl:text-center md:text-lg sm:text-base
-                xs:text-sm">
+                <h2
+                  className="text-xl font-medium capitalize text-light/75 dark:text-darkSecondary/75 xl:text-center md:text-lg sm:text-base
+                xs:text-sm"
+                >
                   Students taught
                 </h2>
               </div>
 
               <div className="flex flex-col items-end justify-center xl:items-center mx-2 xs:items-center">
                 <span className="inline-block text-7xl font-bold md:text-2xl sm:text-2xl xs:text-4xl">
-                  <AnimatedNumbers value={4} />+
+                  <AnimatedNumbers value={5} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-light/75 dark:text-darkSecondary/75 xl:text-center md:text-lg sm:text-base
-                xs:text-sm">
+                <h2
+                  className="text-xl font-medium capitalize text-light/75 dark:text-darkSecondary/75 xl:text-center md:text-lg sm:text-base
+                xs:text-sm"
+                >
                   Years XP
                 </h2>
               </div>
-
-            
             </div>
           </div>
           <Skills />

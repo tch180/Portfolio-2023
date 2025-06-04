@@ -1,26 +1,27 @@
-import AnimatedText from "@/components/AnimatedText";
-import Head from "next/head";
-import React from "react";
-import Layout from "@/components/Layout";
-import Link from "next/link";
-import Image from "next/image";
-import { GithubIcon } from "@/components/Icons";
-import oneStory from "../../public/images/profile/onestory2.png";
-import { motion } from "framer-motion";
-import fosterConnect from "../../public/images/profile/fosterConnect.png";
-import optum3 from "../../public/images/profile/optum3.png";
-import dashboard1 from "../../public/images/profile/dashboard1.png";
-import mhr from "../../public/images/profile/MHR.png";
-import contactkeeper from "../../public/images/profile/contactkeeper.png";
-import TransitionEffect from "@/components/TransitionEffect";
-
+import AnimatedText from '@/components/AnimatedText';
+import Head from 'next/head';
+import React from 'react';
+import Layout from '@/components/Layout';
+import Link from 'next/link';
+import Image from 'next/image';
+import { GithubIcon } from '@/components/Icons';
+import oneStory from '../../public/images/profile/onestory3.png';
+import { motion } from 'framer-motion';
+import fosterConnect from '../../public/images/profile/fosterConnect.png';
+import optum3 from '../../public/images/profile/optum3.png';
+import dashboard1 from '../../public/images/profile/dashboard1.png';
+import mhr from '../../public/images/profile/MHR.png';
+import contactkeeper from '../../public/images/profile/contactkeeper.png';
+import TransitionEffect from '@/components/TransitionEffect';
 
 const FramerImage = motion(Image);
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
-    <article className="w-full flex items-center justify-between relative  rounded-br-2xl
-    rounded-3xl border border-solid border-darkSecondary bg-dark shadow-2xl p-12  dark:bg-light dark:text-dark  lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
+    <article
+      className="w-full flex items-center justify-between relative  rounded-br-2xl
+    rounded-3xl border border-solid border-darkSecondary bg-dark shadow-2xl p-12  dark:bg-light dark:text-dark  lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4"
+    >
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-darkSecondary rounded-br-3xl dark:text-dark md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]" />
 
       <Link
@@ -49,9 +50,13 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-4xl font-bold lg:text-3xl xs:text-2xl">{title}</h2>
+          <h2 className="my-2 w-full text-left text-4xl font-bold lg:text-3xl xs:text-2xl">
+            {title}
+          </h2>
         </Link>
-        <p className="my-2 font-medium text-light dark:text-dark sm:text-sm">{summary}</p>
+        <p className="my-2 font-medium text-light dark:text-dark sm:text-sm">
+          {summary}
+        </p>
         <div className="mt-2 flex items-center ">
           <Link href={github} target="_blank" className="w-10">
             <GithubIcon />
@@ -70,8 +75,10 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 };
 const Project = ({ type, title, img, link, github }) => {
   return (
-    <article className="w-full flex flex-col items-center justify-center rounded-2xl 
-    border border-solid border-darkSecondary bg-dark p-6 relative dark:bg-light xs:p-4 ">
+    <article
+      className="w-full flex flex-col items-center justify-center rounded-2xl 
+    border border-solid border-darkSecondary bg-dark p-6 relative dark:bg-light xs:p-4 "
+    >
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-darkSecondary rounded-br-3xl  md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]" />
 
       <Link
@@ -96,7 +103,9 @@ const Project = ({ type, title, img, link, github }) => {
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">{title}</h2>
+          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">
+            {title}
+          </h2>
         </Link>
 
         <div className="w-full flex items-center justify-between ">
@@ -122,10 +131,13 @@ const projects = () => {
         <title>TR | Projects</title>
         <meta name="description" content="Projects page" />
       </Head>
-      <TransitionEffect/>
+      <TransitionEffect />
       <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-dark">
         <Layout className="pt-16">
-          <AnimatedText text="Bringing ideas to life, one line of code at a time."  className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl" />
+          <AnimatedText
+            text="Bringing ideas to life, one line of code at a time."
+            className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
+          />
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
@@ -150,7 +162,6 @@ const projects = () => {
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
-              
               <Project
                 type="Project"
                 title="Customer Dashboard"
@@ -160,7 +171,7 @@ const projects = () => {
               />
             </div>
             <div className="col-span-12">
-              {" "}
+              {' '}
               <FeaturedProject
                 type="Featured Project"
                 title="Foster Connect"
@@ -171,7 +182,7 @@ const projects = () => {
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
-              {" "}
+              {' '}
               <Project
                 type="Project"
                 title="Gilded Events"
@@ -181,7 +192,7 @@ const projects = () => {
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
-              {" "}
+              {' '}
               <Project
                 type="Project"
                 title="Contact Keeper"
